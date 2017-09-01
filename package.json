@@ -1,6 +1,6 @@
 {
   "name": "frontend-boilerplate",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "private": true,
   "description": "A boilerplate of things that shouldn't exist",
   "author": "rodmoreno",
@@ -9,35 +9,11 @@
     "start": "neutrino start",
     "build": "neutrino build"
   },
-  "neutrino": {
-    "use": [
-      "neutrino-preset-react",
-      "neutrino-middleware-postcss",
-      "override.js"
-    ],
-    "config": {
-      "entry": {
-        "vendor": [
-          "react",
-          "react-dom",
-          "react-redux",
-          "react-router",
-          "react-router-redux",
-          "redux"
-        ]
-      }
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "rucksack-css": {"autoprefixer": true}
-    }
-  },
   "devDependencies": {
     "classnames": "^2.2.5",
-    "neutrino": "^5.6.0",
-    "neutrino-middleware-postcss": "^2.0.2",
-    "neutrino-preset-react": "^5.6.0",
+    "neutrino": "6.1.5",
+    "neutrino-middleware-postcss": "3.0.0",
+    "neutrino-preset-react": "6.1.5",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-hot-loader": "^3.0.0-beta",
