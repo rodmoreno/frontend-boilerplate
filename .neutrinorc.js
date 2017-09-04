@@ -16,6 +16,13 @@ module.exports = {
         'rucksack-css': {autoprefixer: true}
       }
     }]
-  ]
+  ],
+  env: {
+    NODE_ENV: {
+      production: {
+        use: ['neutrino-middleware-extractstyles']
+      }
+    }
+  }
 }
   
