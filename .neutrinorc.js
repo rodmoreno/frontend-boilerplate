@@ -1,3 +1,5 @@
+const rucksack = require('rucksack-css')
+
 module.exports = {
   use: [
     'neutrino-preset-react',
@@ -10,11 +12,9 @@ module.exports = {
         .add('react-router-redux')
         .add('redux'),
     neutrino => neutrino.config.module.rule('style').use('css').options({ modules: true }),
-    ['neutrino-preset-react', {
-      plugins: {
-        'rucksack-css': {autoprefixer: true}
-      }
-    }]
+    ['neutrino-middleware-postcss', {
+      plugins: [rucksack({ autoprefixer: true })]
+    }],
   ],
   env: {
     NODE_ENV: {
