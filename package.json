@@ -11,10 +11,10 @@
   },
   "devDependencies": {
     "classnames": "^2.2.5",
-    "neutrino": "7.0.2",
+    "neutrino": "7.3.0",
     "neutrino-middleware-extractstyles": "^2.0.1",
     "neutrino-middleware-postcss": "3.0.0",
-    "neutrino-preset-react": "7.0.2",
+    "neutrino-preset-react": "7.3.0",
     "react": "15.6.1",
     "react-dom": "15.6.1",
     "react-hot-loader": "^3.0.0-beta",
