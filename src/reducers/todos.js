@@ -16,7 +16,7 @@ export default handleActions({
   },
 
   'delete todo' (state, action) {
-    return state.filter(todo => todo.id !== action.payload )
+    return state.filter(todo => todo.id !== action.payload)
   },
 
   'edit todo' (state, action) {

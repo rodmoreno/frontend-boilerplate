@@ -32,7 +32,7 @@ class MainSection extends Component {
     if (todos.length > 0) {
       return <input
         className={style.toggleAll}
-        type="checkbox"
+        type='checkbox'
         checked={completedCount === todos.length}
         onChange={actions.completeAll} />
     }
