@@ -2,7 +2,8 @@ const rucksack = require('rucksack-css')
 
 module.exports = {
   use: [
-    'neutrino-preset-react',
+    '@neutrinojs/standardjs',
+    '@neutrinojs/react',
     neutrino => neutrino.config
       .entry('vendor')
         .add('react')
@@ -15,13 +16,5 @@ module.exports = {
     ['neutrino-middleware-postcss', {
       plugins: [rucksack({ autoprefixer: true })]
     }],
-  ],
-  env: {
-    NODE_ENV: {
-      production: {
-        use: ['neutrino-middleware-extractstyles']
-      }
-    }
-  }
+  ]
 }
-  
